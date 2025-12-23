@@ -22,11 +22,7 @@ const userSchema = mongoose.Schema({
     type: String,
     enum: ["admin", "user"],
     default: "user",
-  },
-  token: {
-    type: String,
-    required: true,
-  },
+  }
 });
 
 const user = mongoose.model("user", userSchema);
