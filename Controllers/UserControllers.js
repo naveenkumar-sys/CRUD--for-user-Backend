@@ -10,9 +10,9 @@ export const CreateUser = async (req, res) => {
     await newUser.save();
     res
       .status(200)
-      .json({ message: "The user is registered Successfully", data: newUser });
+      .json({ message: "The user is created Successfully", data: newUser });
   } catch (error) {
-    res.status(503).json({ message: "The user is not registered" });
+    res.status(503).json({ message: "The user is not created",error });
   }
 };
 

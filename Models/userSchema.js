@@ -1,4 +1,4 @@
-import { TokenExpiredError } from "jsonwebtoken";
+
 import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema({
@@ -14,7 +14,7 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  Profile: {
+  profile: {
     type: String,
     required: true,
   },
