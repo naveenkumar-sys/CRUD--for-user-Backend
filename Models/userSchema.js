@@ -6,15 +6,15 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  UserAge: {
+  age: {
     type: Number,
     required: true,
   },
-  userDOB: {
+  DOB: {
     type: String,
     required: true,
   },
-  userProfile: {
+  Profile: {
     type: String,
     required: true,
   },
