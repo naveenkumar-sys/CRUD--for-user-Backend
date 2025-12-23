@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import connectDB from "./Database/db.config.js";
 
 //dotenv config
 dotenv.config();
@@ -13,6 +14,9 @@ app.use(express.json());
 
 //cors middleware - handle error from different port
 app.use(cors());
+
+//call connectDB
+connectDB();
 
 //default route
 app.get("/", (req, res) => {
