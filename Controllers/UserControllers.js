@@ -12,7 +12,7 @@ export const CreateUser = async (req, res) => {
       .status(200)
       .json({ message: "The user is created Successfully", data: newUser });
   } catch (error) {
-    res.status(503).json({ message: "The user is not created",error });
+    res.status(503).json({ message: "The user is not created", error });
   }
 };
 
