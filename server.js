@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./Database/db.config.js";
+import router from "./Routes/UserRouter.js";
 
 //dotenv config
 dotenv.config();
@@ -22,6 +23,9 @@ connectDB();
 app.get("/", (req, res) => {
   res.status(200).send("welcome to Backend!🖐️");
 });
+
+//custom router
+app.use("/api/user", router);
 
 //port
 
