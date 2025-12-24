@@ -13,7 +13,7 @@ const userSchema = mongoose.Schema({
   DOB: {
     type: String,
     required: true,
-  },
+  },    
   profile: {
     type: String,
     required: true,
